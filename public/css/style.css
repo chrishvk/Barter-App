@@ -1,0 +1,58 @@
+body {
+    background: url('https://cdn.pixabay.com/photo/2013/08/28/11/47/leaf-176722_1280.jpg');
+    z-index: -3;
+    background-attachment: fixed;
+    /* Si la imagen de fondo no abarca todo el fondo */
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+/* Llamar una fuente externa */
+/* @font-face {
+    font-family: monospace;
+    src: url('');
+} */
+
+.titulo1 {
+    color: #fff;
+    font-size: 40px;
+}
+.btn-fb {
+    background-color: #0a58ca;
+    color: #fff;
+    border-radius: 50%;
+}
+.btn-fb:hover {
+    background-color: #fff;
+    color: #0a58ca;
+}
+
+.btn-wpp {
+    background-color: #1cb478;
+    color: #fff;
+    border-color: #1cb478;
+    border-radius: 50%;
+}
+
+.btn-wpp:hover {
+    background-color: #fff;
+    border-color: #1cb478;
+    color: #1cb478;
+}
+.slider {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
