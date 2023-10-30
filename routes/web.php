@@ -26,3 +26,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/admin', function() {
     return view('admin.index');
 });
+
+
+// Rutas para el administrador - Prendas
+// Route::get('/admin/prendas', [\App\Http\Controllers\PrendaController::class, 'index']);
+
+// Route::get('/admin/prendas/create', [\App\Http\Controllers\PrendaController::class, 'create']);
+
+Route::resource('/admin/prendas', \App\Http\Controllers\PrendaController::class);
