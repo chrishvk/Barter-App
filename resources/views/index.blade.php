@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {{-- SLICK --}}
-    <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+    {{-- <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css"> --}}
     {{-- Animate CSS --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     {{-- Icono del sistema --}}
@@ -103,128 +103,79 @@
 
     <div class="container" style="background-color: #CBFFAA; border-radius: 10px">
         <h3><p style="text-align: center"><b>Recién agregados</b></p></h3>
-        <div class="row">
-            <section class="regular slider" style="margin-top: 0px">
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
+        <div class="container text-center my-3">
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-3">
+                                <div class="">
+                                    <div class="card-img">
+                                        <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' class="img-fluid">
+                                    </div>
+                                    Prenda 1
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="">
+                                    <div class="card-img">
+                                        <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' class="img-fluid">
+                                    </div>
+                                    Prenda 2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="">
+                                    <div class="card-img">
+                                        <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' class="img-fluid">
+                                    </div>
+                                    Prenda 3
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="">
+                                    <div class="card-img">
+                                        <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' class="img-fluid">
+                                    </div>
+                                    Prenda 4
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="">
+                                    <div class="card-img">
+                                        <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' class="img-fluid">
+                                    </div>
+                                    Prenda 5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
                 </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>            
-            </section>
+            </div>
+
         </div>
+
     </div>
 
     <br><br>
 
     <div class="container" style="background-color: #CBFFAA; border-radius: 10px">
         <h3><p style="text-align: center"><b>Los más buscados</b></p></h3>
-        <div class="row">
-            <section class="regular slider" style="margin-top: 0px">
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>
-                <div>
-                    <img src='https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwe77c5b62/images/hi-res/196150118259_1_20221215120000-mrtPeru.jpg' height="200px" width="10px">
-                </div>            
-            </section>
-        </div>
+        
     </div>
 
 
@@ -233,16 +184,8 @@
 
     {{-- Bootstrap 5 --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    {{-- SLICK script --}}
-    <script src="https://kenwheeler.github.io/slick/slick/slick.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(".regular").slick({
-            dots: true,
-            infinite: true,
-            slidesToShow: 5,
-            slidesToScroll: 5
-        });
-    </script>
+    {{-- Carrousel --}}
+    <script src="{{asset('js/carousel.js')}}"></script>
+    
 </body>
 </html>

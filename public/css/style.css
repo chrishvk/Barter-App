@@ -39,20 +39,37 @@ body {
     border-color: #1cb478;
     color: #1cb478;
 }
-.slider {
-    width: 90%;
-    margin: 100px auto;
+
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
 }
 
-.slick-slide {
-    margin: 0px 20px;
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
 }
 
-.slick-slide img {
-    width: 100%;
+/* Pantallas medias y altas */
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
 }
 
-.slick-prev:before,
-.slick-next:before {
-    color: black;
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-inner-start {
+    transform: translateX(0);
 }
+

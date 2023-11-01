@@ -56,6 +56,7 @@
                                 </td>
                             </tr>
                         </table>
+                        <a href="{{url('admin/prendas')}}" class="btn btn-danger">Atrás</a>
                     </div>
                 </div>
               </div>

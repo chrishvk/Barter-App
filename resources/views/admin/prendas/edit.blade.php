@@ -112,7 +112,7 @@
                         <div class="row">
                           <div class="col-md-6">
                             <input type="submit" value="Actualizar" class="btn btn-success">
-                            <a href="" class="btn btn-default">Cancelar</a>
+                            <a href="{{url('admin/prendas')}}" class="btn btn-danger">Cancelar</a>
                           </div>
                         </div>
                     </form>
