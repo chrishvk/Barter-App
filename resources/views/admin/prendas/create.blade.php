@@ -51,6 +51,7 @@
                                       <option value="CAMISETAS" {{old('categoria')=='CAMISETAS' ? 'selected' : ''}}>CAMISETAS</option>
                                       <option value="CARTERAS" {{old('categoria')=='CARTERAS' ? 'selected' : ''}}>CARTERAS</option>
                                       <option value="SHORTS" {{old('categoria')=='SHORTS' ? 'selected' : ''}}>SHORTS</option>
+                                      <option value="FALDAS" {{old('categoria')=='FALDAS' ? 'selected' : ''}}>FALDAS</option>
                                       <option value="GORROS" {{old('categoria')=='GORROS' ? 'selected' : ''}}>GORROS</option>
                                       <option value="BLUSAS" {{old('categoria')=='BLUSAS' ? 'selected' : ''}}>BLUSAS</option>
                                     </select>

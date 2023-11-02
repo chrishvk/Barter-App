@@ -90,4 +90,14 @@ class PrendaController extends Controller
         Prenda::destroy($id);
         return redirect()->route('prendas.index')->with('mensaje', 'Se eliminó registro correctamente');
     }
+
+    public function cargar_prendas() {
+        $prendas = Prenda::all();
+        return view('index', ['prendas'=>$prendas]);
+    }
+
+    public function datos_prenda($id) {
+        $prenda = Prenda::findorFail($id);
+        return view('prenda', ['prenda'=>$prenda]);
+    }
 }

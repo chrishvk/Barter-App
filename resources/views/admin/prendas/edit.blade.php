@@ -42,12 +42,24 @@
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label for="">Categoría de la prenda<span style="color: red"><b>*</b></span></label>
-                                    <input type="text" class="form-control" name="categoria" required value="{{($prenda->categoria)}}">
-                                    @error('categoria')
-                                        <small style="color:red">{{$message}}</small>
-                                    @enderror
-                                </div>
+                                  <label for="">Categoría de la prenda<span style="color: red"><b>*</b></span></label>
+                                  {{-- <input type="text" class="form-control" name="categoria" required value="{{old('categoria')}}"> --}}
+                                  <select name="categoria" id="" class="form-control">
+                                    <option value="PANTALONES" {{old('categoria')=='PANTALONES' ? 'selected' : ''}}>PANTALONES</option>
+                                    <option value="CAMISAS" {{old('categoria')=='CAMISAS' ? 'selected' : ''}}>CAMISAS</option>
+                                    <option value="CASACAS" {{old('categoria')=='CASACAS' ? 'selected' : ''}}>CASACAS</option>
+                                    <option value="ZAPATOS" {{old('categoria')=='ZAPATOS' ? 'selected' : ''}}>ZAPATOS</option>
+                                    <option value="CAMISETAS" {{old('categoria')=='CAMISETAS' ? 'selected' : ''}}>CAMISETAS</option>
+                                    <option value="CARTERAS" {{old('categoria')=='CARTERAS' ? 'selected' : ''}}>CARTERAS</option>
+                                    <option value="SHORTS" {{old('categoria')=='SHORTS' ? 'selected' : ''}}>SHORTS</option>
+                                    <option value="FALDAS" {{old('categoria')=='FALDAS' ? 'selected' : ''}}>FALDAS</option>
+                                    <option value="GORROS" {{old('categoria')=='GORROS' ? 'selected' : ''}}>GORROS</option>
+                                    <option value="BLUSAS" {{old('categoria')=='BLUSAS' ? 'selected' : ''}}>BLUSAS</option>
+                                  </select>
+                                  @error('categoria')
+                                      <small style="color:red">{{$message}}</small>
+                                  @enderror
+                              </div>
                                 <div class="form-group">
                                     <label for="">Talla de la prenda<span style="color: red"><b>*</b></span></label>
                                     <input type="text" class="form-control" name="talla" required value="{{($prenda->talla)}}">
