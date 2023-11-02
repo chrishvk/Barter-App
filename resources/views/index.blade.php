@@ -11,13 +11,15 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <form class="d-flex">
+
+                <form class="d-flex" method="GET" action="{{url('/buscar')}}">
                     <label for=""><b style="color: #fff; font-size:25px">Buscar: </b></label>
-                    <input class="form-control me-2" type="search" placeholder="Nombre de la prenda" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Nombre de la prenda" aria-label="Search" name="texto">
                     <button class="btn btn-primary" type="submit">
                         <i class="bi bi-search"></i>
                     </button>
                 </form>
+
             </div>
             <div class="col-md-3"></div>
         </div>

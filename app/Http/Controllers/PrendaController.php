@@ -100,4 +100,10 @@ class PrendaController extends Controller
         $prenda = Prenda::findorFail($id);
         return view('prenda', ['prenda'=>$prenda]);
     }
+
+    public function buscar_prenda() {
+        $texto = $_GET['texto'];
+        $datos = Prenda::where('nombre','LIKE','%'.$texto.'%')->get();
+        return view('buscar',['datos'=>$datos]);
+    }
 }

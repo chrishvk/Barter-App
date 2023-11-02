@@ -14,6 +14,7 @@
                 <p><b>Estado: </b>Disponible</p>
             </div>
             <div class="col-md-4">
+                <br>
                 <p><b>Categoría: </b>{{$prenda->categoria}}</p>
                 <p><b>Descripción: </b>{{$prenda->descripcion}}</p>
                 <p><b>Talla: </b>{{$prenda->talla}}</p>
