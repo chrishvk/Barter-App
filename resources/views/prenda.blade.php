@@ -21,6 +21,13 @@
                 <p><b>Color: </b>{{$prenda->color}}</p>
                 <a class="btn btn-primary" href=""><i class="bi bi-messenger"></i>   Solicitar intercambio</a>
                 <a href="{{url('/')}}" class="btn btn-danger">Cancelar</a>
+                <br><br>
+                <form action="{{url('/favorito')}}" method="POST">
+                    @csrf
+                    <input type="text" name="id_prenda" value="{{$prenda->id}}" hidden>
+                    <input type="text" name="email" value="{{Auth::user()->email}}" hidden>
+                    <button type="submit" class="btn btn-warning"><i class="bi bi-heart-fill"></i> Agregar a favoritos</button>
+                </form>
             </div>
         </div>
     </div>

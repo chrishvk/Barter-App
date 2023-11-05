@@ -29,7 +29,7 @@
             <div style="width: 45px">
                 <img src="{{asset('img/icono.jpg')}}" alt="logoba" width="35px">
             </div>
-            <a class="navbar-brand" href="#">BarterApp</a>
+            <a class="navbar-brand" href="{{url('/')}}">BarterApp</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,6 +37,9 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{url('/')}}"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{url('/home')}}"><i class="bi bi-heart-fill"></i> Favoritos</a>
                     </li>
                     </li>
                     <li class="nav-item dropdown">
@@ -51,7 +54,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#"><i class="bi bi-cloud-upload-fill"></i>
+                        <a class="nav-link active" href="admin"><i class="bi bi-cloud-upload-fill"></i>
                         Subir fotos</a>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-archive"></i>

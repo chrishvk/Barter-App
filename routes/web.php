@@ -35,8 +35,11 @@ Route::get('/admin', function() {
 
 Route::resource('/admin/prendas', \App\Http\Controllers\PrendaController::class);
 
+Route::resource('/favorito', \App\Http\Controllers\FavoritoController::class);
+
 Route::get('/', [\App\Http\Controllers\PrendaController::class, 'cargar_prendas']);
 
 Route::get('/prenda/{id}', [\App\Http\Controllers\PrendaController::class, 'datos_prenda']);
 
 Route::get('/buscar', [\App\Http\Controllers\PrendaController::class, 'buscar_prenda']);
+
