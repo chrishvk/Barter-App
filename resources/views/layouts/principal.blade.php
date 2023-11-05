@@ -79,13 +79,13 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link btn btn-primary" href="{{ route('login') }}">{{ __('Iniciar sesión   ') }}</a>
+                                    <a class="nav-link btn btn-outline-primary" href="{{ route('login') }}">{{ __('Iniciar sesión   ') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link btn btn-primary" href="{{ route('register') }}">{{ __('Regístrate') }}</a>
+                                    <a class="nav-link btn btn-outline-primary" href="{{ route('register') }}">{{ __('Regístrate') }}</a>
                                 </li>
                             @endif
                         @else
