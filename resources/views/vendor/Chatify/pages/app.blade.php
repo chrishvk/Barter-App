@@ -27,22 +27,22 @@
            <div class="show messenger-tab users-tab app-scroll" data-view="users">
                {{-- Favorites --}}
                <div class="favorites-section">
-                <p class="messenger-title"><span>Favorites</span></p>
+                <p class="messenger-title"><span>Chats Favoritos</span></p>
                 <div class="messenger-favorites app-scroll-hidden"></div>
                </div>
                {{-- Saved Messages --}}
                <p class="messenger-title"><span>Your Space</span></p>
                {!! view('Chatify::layouts.listItem', ['get' => 'saved']) !!}
                {{-- Contact --}}
-               <p class="messenger-title"><span>All Messages</span></p>
+               <p class="messenger-title"><span>Todos los Mensajes</span></p>
                <div class="listOfContacts" style="width: 100%;height: calc(100% - 272px);position: relative;"></div>
            </div>
              {{-- ---------------- [ Search Tab ] ---------------- --}}
            <div class="messenger-tab search-tab app-scroll" data-view="search">
                 {{-- items --}}
-                <p class="messenger-title"><span>Search</span></p>
+                <p class="messenger-title"><span>Buscar</span></p>
                 <div class="search-records">
-                    <p class="message-hint center-el"><span>Type to search..</span></p>
+                    <p class="message-hint center-el"><span>Escribe para buscar..</span></p>
                 </div>
              </div>
         </div>
@@ -69,16 +69,16 @@
             </nav>
             {{-- Internet connection --}}
             <div class="internet-connection">
-                <span class="ic-connected">Connected</span>
-                <span class="ic-connecting">Connecting...</span>
-                <span class="ic-noInternet">No internet access</span>
+                <span class="ic-connected">Conectado</span>
+                <span class="ic-connecting">Conectando...</span>
+                <span class="ic-noInternet">Sin acceso a internet</span>
             </div>
         </div>
 
         {{-- Messaging area --}}
         <div class="m-body messages-container app-scroll">
             <div class="messages">
-                <p class="message-hint center-el"><span>Please select a chat to start messaging</span></p>
+                <p class="message-hint center-el"><span>Selecciona un chat</span></p>
             </div>
             {{-- Typing indicator --}}
             <div class="typing-indicator">

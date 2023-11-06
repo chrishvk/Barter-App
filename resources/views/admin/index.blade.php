@@ -6,7 +6,7 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0">Bienvenido Christian Caso</h1>
+              <h1 class="m-0">Bienvenido {{ Auth::user()->name }}</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
@@ -24,13 +24,13 @@
             <div class="col-md-12">
               <div class="card card-primary card-outline">
                 <div class="card-header">
-                  <h5 class="m-0">Featured</h5>
+                  <h5 class="m-0">Perfil</h5>
                 </div>
                 <div class="card-body">
-                  <h6 class="card-title">Special title treatment</h6>
+                  <h6 class="card-title">En proceso....</h6>
   
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class="card-text">También en proceso....</p>
+                  <a href="#" class="btn btn-primary">A donde tu quieras xd</a>
                 </div>
               </div>
             </div>

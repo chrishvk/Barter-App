@@ -19,7 +19,7 @@
                 <p><b>Descripción: </b>{{$prenda->descripcion}}</p>
                 <p><b>Talla: </b>{{$prenda->talla}}</p>
                 <p><b>Color: </b>{{$prenda->color}}</p>
-                <a class="btn btn-primary" href=""><i class="bi bi-messenger"></i>   Solicitar intercambio</a>
+                <a class="btn btn-primary" href="{{url('/chatify')}}"><i class="bi bi-messenger"></i> Solicitar intercambio</a>
                 <a href="{{url('/')}}" class="btn btn-danger">Cancelar</a>
                 <br><br>
                 <form action="{{url('/favorito')}}" method="POST">
