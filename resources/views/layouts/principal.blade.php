@@ -54,7 +54,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="admin"><i class="bi bi-cloud-upload-fill"></i>
+                        <a class="nav-link active" href="admin/prendas/create"><i class="bi bi-cloud-upload-fill"></i>
                         Subir fotos</a>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-archive"></i>

@@ -64,7 +64,7 @@
                                 </td>
                                 <td>
                                   <div class="btn-group" role="group" aria-label="Basic example">
-                                    <a href="{{route('prendas.show', $prenda->id)}}" class="btn btn-info btn-sm">Mostrar</a>
+                                    <a href="{{route('prendas.show', $prenda->id)}}" class="btn btn-info btn-sm">Ver</a>
                                     <a href="{{route('prendas.edit', $prenda->id)}}" class="btn btn-warning btn-sm">Editar</a>
                                     <form action="{{url('admin/prendas',$prenda->id)}}" method="POST">
                                       @csrf

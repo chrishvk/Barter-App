@@ -58,9 +58,17 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item">
             <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-user-circle"></i>
+              <p>
+                Mi perfil
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-photo-video"></i>
               <p>
-                Prendas
+                Publicaciones
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -68,13 +76,13 @@
               <li class="nav-item">
                 <a href="{{url('admin/prendas')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Lista de prendas</p>
+                  <p>Lista de publicaciones</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{url('admin/prendas/create')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Subir prendas</p>
+                  <p>Crear nueva publicación</p>
                 </a>
               </li>
             </ul>
