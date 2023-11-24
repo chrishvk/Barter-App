@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('color', 100);
             $table->text('descripcion');
             $table->text('imagen');
+            $table->string('puntaje',10);
             
             $table->timestamps();
         });

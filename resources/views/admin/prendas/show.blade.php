@@ -50,6 +50,10 @@
                                 <td>{{$prenda->descripcion}}</td>
                             </tr>
                             <tr>
+                                <td><b>Puntaje obtenido</b></td>
+                                <td>{{$prenda->puntaje}} <i class="fa fa-star"></td>
+                            </tr>
+                            <tr>
                                 <td><b>Foto</b></td>
                                 <td>
                                     <img src="{{asset('storage').'/'.$prenda->imagen}}" alt="" width="300px">

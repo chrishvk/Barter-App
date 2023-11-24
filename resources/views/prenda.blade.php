@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-md-6">
                 <img src="{{asset('storage').'/'.$prenda->imagen}}" alt="" width="250px" height="250px">
-                <p><b>Calificación: 8 <i class="bi bi-star-fill"></i></b></p>
+                <p><b>Calificación: {{$prenda->puntaje}} <i class="bi bi-star-fill"></i></b></p>
                 <p><b>Estado: </b>Disponible</p>
             </div>
             <div class="col-md-4">

@@ -26,12 +26,15 @@
                 <div class="card-header">
                   <h5 class="m-0">Prendas subidas</h5>
                   @if ($message = Session::get('mensaje'))
+                    @foreach($prendas as $prenda)
                       <script>
                         Swal.fire(
                         'Éxito',
-                        '{{$message}}',
+                        'Puntaje obtenido: {{ $prenda->puntaje }}',
                         'success')
                       </script>
+                    @endforeach
+
                   @endif
                 </div>
                 <div class="card-body">
@@ -46,6 +49,7 @@
                             <th>Color</th>
                             <th>Descripción</th>
                             <th>Imagen</th>
+                            <th>Puntaje</th>
                             <th>Acciones</th>
                           </tr>
                         </thead>
@@ -54,14 +58,15 @@
                             @foreach($prendas as $prenda)
                               <tr>
                                 <td> <?php echo $contador = $contador + 1;?></td>
-                                <td>{{ $prenda->nombre  }}</td>
-                                <td>{{ $prenda->categoria  }}</td>
-                                <td>{{ $prenda->talla  }}</td>
-                                <td>{{ $prenda->color  }}</td>
-                                <td>{{ $prenda->descripcion  }}</td>
+                                <td>{{ $prenda->nombre }}</td>
+                                <td>{{ $prenda->categoria }}</td>
+                                <td>{{ $prenda->talla }}</td>
+                                <td>{{ $prenda->color }}</td>
+                                <td>{{ $prenda->descripcion }}</td>
                                 <td>
                                   <img src="{{asset('storage').'/'.$prenda->imagen}}" alt="" width="100px">
                                 </td>
+                                <td>{{ $prenda->puntaje }} <i class="fa fa-star"></i></td>
                                 <td>
                                   <div class="btn-group" role="group" aria-label="Basic example">
                                     <a href="{{route('prendas.show', $prenda->id)}}" class="btn btn-info btn-sm">Ver</a>

@@ -28,7 +28,8 @@ class PrendaController extends Controller
             'talla' => 'required',
             'color' => 'required',
             'descripcion' => 'required',
-            'imagen' => 'required'
+            'imagen' => 'required',
+            'puntaje' => 'required'
         ]);
 
         //Registro de datos
@@ -39,6 +40,8 @@ class PrendaController extends Controller
         $prenda->color = $request->color;
         $prenda->descripcion = $request->descripcion;
         $prenda->imagen = $request->file('imagen')->store('prendas upload', 'public');
+        $prenda->puntaje = $request->puntaje;
+
         $prenda->save();
 
         return redirect()->route('prendas.index')->with('mensaje', 'Se registró correctamente');

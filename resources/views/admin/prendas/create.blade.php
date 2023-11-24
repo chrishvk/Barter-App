@@ -1,8 +1,6 @@
 @extends('layouts.admin')
 
 @section('content')
-
-    <script src="https://cdn.ckeditor.com/4.23.0-lts/standard/ckeditor.js"></script>
 <!-- Content Header (Page header) -->
     <div class="content-header">
         <div class="container-fluid">
@@ -78,12 +76,21 @@
                                 <div class="form-group">
                                     <label for="">Descripción de la prenda<span style="color: red"><b>*</b></span></label>
                                     <textarea name="descripcion" id="" cols="30" rows="8" class="form-control" required value="{{old('descripcion')}}"></textarea>
-                                    <script>
-                                        CKEDITOR.replace('descripcion');
-                                    </script>
                                     @error('descripcion')
                                     <small style="color:red">{{$message}}</small>
                                 @enderror
+                                </div>
+                                <div class="form-group" hidden>
+                                  <label for="">Puntaje de la prenda<span style="color: red"><b>*</b></span></label>
+                                  <input id="puntajeInput" type="text" class="form-control" name="puntaje" required>
+                                  <script>
+                                    // Función para llamar a modelo de reconocimiento y categorizacion de prendas
+                                    function generarPuntaje(min, max) {
+                                        return Math.floor(Math.random() * (max - min + 1)) + min;
+                                    }
+                                    var puntajePrenda = generarPuntaje(8, 20);
+                                    document.getElementById("puntajeInput").value = puntajePrenda;
+                                  </script>
                                 </div>
                                 <div class="form-group">
                                     <label for="">Suba una foto de la prenda<span style="color: red"><b>*</b></span></label>
