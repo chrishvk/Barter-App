@@ -85,13 +85,13 @@ class PrendaController extends Controller
 
         $prenda->save();
 
-        return redirect()->route('prendas.index')->with('mensaje', 'Se actualizó correctamente');
+        return redirect()->route('prendas.index')->with('mensaje2', 'Se actualizó correctamente');
     }
 
     //eliminar registro
     public function destroy($id) {
         Prenda::destroy($id);
-        return redirect()->route('prendas.index')->with('mensaje', 'Se eliminó registro correctamente');
+        return redirect()->route('prendas.index')->with('mensaje3', 'Se eliminó registro correctamente');
     }
 
     public function cargar_prendas() {

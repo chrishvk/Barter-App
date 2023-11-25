@@ -34,7 +34,6 @@
                         'success')
                       </script>
                     @endforeach
-
                   @endif
                 </div>
                 <div class="card-body">
@@ -71,10 +70,26 @@
                                   <div class="btn-group" role="group" aria-label="Basic example">
                                     <a href="{{route('prendas.show', $prenda->id)}}" class="btn btn-info btn-sm">Ver</a>
                                     <a href="{{route('prendas.edit', $prenda->id)}}" class="btn btn-warning btn-sm">Editar</a>
+                                    @if ($message = Session::get('mensaje2'))
+                                        <script>
+                                          Swal.fire(
+                                          'Éxito',
+                                          '{{$message}}',
+                                          'success')
+                                        </script>
+                                      @endif
                                     <form action="{{url('admin/prendas',$prenda->id)}}" method="POST">
                                       @csrf
                                       {{method_field('DELETE')}}
                                       <input type="submit" class="btn btn-danger btn-sm" value="Eliminar" onclick="return confirm('¿Está seguro que desea eliminar la publicación?')">
+                                      @if ($message = Session::get('mensaje3'))
+                                        <script>
+                                          Swal.fire(
+                                          'Éxito',
+                                          '{{$message}}',
+                                          'success')
+                                        </script>
+                                      @endif
                                     </form>
 
                                   </div>

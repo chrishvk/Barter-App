@@ -40,29 +40,22 @@
                 </div>
                 <div class="card-header">
                     <h5 class="m-0">Información Personal</h5>
-                    @if ($message = Session::get('mensaje'))
-                        <script>
-                          Swal.fire(
-                          'Éxito',
-                          '{{$message}}',
-                          'success')
-                        </script>
-                    @endif
                 </div>
                 <div class="card-body">
                     <label for="">Contraseña: </label>
                     <p>{{Auth::user()->password}}</p>
 
                     <label for="">Número de celular: </label>
-                    <p>{{Auth::user()->name}}</p>
+                    <p>**************</p>
 
-                    <label for="">Foto de perfil: </label>
-                    <p>{{Auth::user()->name}}</p>
+                    <label for="">Foto de perfil: </label><br>
+                    <img src="http://127.0.0.1:8000/dist/img/user2-160x160.jpg" alt="" width="150px">
+                    <p></p>
 
 
-                    <i class="nav-icon fa fa-check-circle" style="color: green"></i><a href="">Cuenta verificada</a>
+                    <i class="nav-icon fa fa-check-circle" style="color: green"></i><a href=""> Cuenta verificada</a>
                     <br><br>
-                    <a href="" class="btn btn-success">Actualizar</a>
+                    <a href="#" class="btn btn-success">Actualizar</a>
                     
 
                 </div>
